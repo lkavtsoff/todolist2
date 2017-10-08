@@ -1,0 +1,84 @@
+:host .wrap {
+    color: #555;
+    height: calc(100vh - 40px); 
+}
+:host .wrap section {
+    width: 980px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 20px auto;
+}
+
+/* heading */
+:host .wrap section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+/* add new item */
+:host .wrap .new_item {
+    height: 40px;
+    margin-bottom: 20px;
+}
+:host .wrap .new_item input {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 240px;
+    margin-right: 20px;
+}
+:host .wrap .new_item button {
+    font-size: 16px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #555;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #aaa;
+    line-height: 38px;
+    cursor: pointer;
+}
+:host .wrap .new_item button b {
+    font-size: 28px;
+    vertical-align: -4px;
+}
+
+/* list */
+:host .wrap section ul {
+    display: block;
+}
+:host .wrap section ul li {
+    font-size: 16px;
+    display: block;
+    line-height: 40px;
+    list-style-type: none;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+:host .wrap section ul li:after {
+    content: 'Confirm';
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    height: 20px;
+    top: 10px;
+    right: 20px;
+}
+:host .wrap section ul li:hover:after {
+    display: block;
+}
+:host .wrap section ul li.lt {
+    text-decoration: line-through;
+}
