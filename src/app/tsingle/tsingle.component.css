@@ -1,0 +1,45 @@
+:host section {
+    width: 980px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 40px auto;
+}
+
+/* heading */
+:host section h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 10px 20px;
+    border-bottom: 2px solid #555;
+    background-color: #ccc;
+}
+:host section p {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 20px;
+    background-color: #ddd;
+}
+
+:host section button {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    margin: 20px auto;
+    display: block;
+    height: 40px;
+    width: 200px;
+    padding: 0 10px;
+    border: 1px solid #555;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #aaa;
+    line-height: 38px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+:host section button:hover {
+    color: #fff;
+}
+

@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'micranormal';
+    src: url('../../assets/fonts/micra.eot');
+    src: url('../../assets/fonts/micra.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/micra.woff2') format('woff2'),
+         url('../../assets/fonts/micra.woff') format('woff'),
+         url('../../assets/fonts/micra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:host .container {
+    width: 980px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+:host .container section:first-child {
+    width: 30%;
+    float: left;
+}
+:host .container section:last-child {
+    width: 70%;
+    float: right;
+}
+:host .container section {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+:host .container section:first-child img {
+    width: 100%;
+    box-sizing: border-box;
+    border: 5px solid #777;
+    margin: 10px 0;
+}
+
+:host h1, :host h2 {
+    font-family: 'micranormal';
+    line-height: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #463653;
+}
+:host h1 {
+    font-size: 24px;
+}
+:host h2 {
+    font-size: 20px;
+}
+
+:host p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+    text-align: justify;
+    padding-bottom: 20px;
+    color: #463653;
+}
+
+:host ul {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
+:host ul li {
+    list-style-type: none;
+    display: block;
+}
+:host ul li a {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #8560a8;
+    text-transform: uppercase;
+    display: block;
+    transition: 0.1s all;
+}
+:host ul li a:hover {
+    color: #463653;
+    transform: scale(1.05);
+}
+:host ul li a i {
+    font-size: 22px;
+    line-height: 30px;
+    float: right;
+}

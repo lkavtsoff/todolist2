@@ -1,17 +1,9 @@
 <div class="wrap">
     <theader></theader>
-    
-    <section>
-        <h1>Todolist options</h1>
-        <div class="new_item">
-            <input [(ngModel)]="name" type="text" placeholder="Add new item">
-            <button (click)="addItem(name)"><b>+</b> Add to list</button>
-        </div>
 
-        <ul>
-            <li (click)="highlightItem(item)" [class.lt]="item.selected" *ngFor="let item of items">{{item.name}}</li>
-        </ul>
-    </section>
+    <router-outlet></router-outlet>
+
 </div>
 
 <tfooter></tfooter>
+

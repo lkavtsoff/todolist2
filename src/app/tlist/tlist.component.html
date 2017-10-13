@@ -1,0 +1,18 @@
+<section>
+  <h1>Todolist options</h1>
+  <div class="new_item">
+      <aside>
+          <input [(ngModel)]="name" type="text" placeholder="Item name">
+          <button (click)="addItem(name, details)"><b>+</b> Add to list</button>
+      </aside>
+      <aside>
+          <textarea [(ngModel)]="details" placeholder="Specify item details"></textarea>
+      </aside>
+  </div>
+
+  <ul>
+      <li [(class.lt)]="item.done" *ngFor="let item of items">
+          <a href="item/{{item.id}}">{{item.name}}</a>
+      </li>
+  </ul>
+</section>

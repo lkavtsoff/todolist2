@@ -1,0 +1,23 @@
+:host section {
+    width: 980px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+:host section h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 10px 20px;
+}
+:host section a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.2s ease-in-out;
+}
+:host section a:hover {
+    text-decoration: underline;
+    color: #ccc;
+}
