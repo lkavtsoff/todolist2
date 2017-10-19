@@ -16,7 +16,6 @@ export class TlistComponent implements OnInit {
   constructor (private itemService: ItemService) {}
 
   ngOnInit() {
-      console.log (this.itemService.items);
       this.items = this.itemService.getItems();
   }
 

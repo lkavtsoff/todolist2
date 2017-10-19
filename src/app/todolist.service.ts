@@ -18,7 +18,7 @@ export class ItemService {
     
     addItem(name: string, details: string) {
         let id: number = this.items.length + 1;
-        this.items.push(new Item(id, false, name, details));
+        this.items.push({id: id, done: false, name: name, details: details});
     }
 
     highlightItem(element) {

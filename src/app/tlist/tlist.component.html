@@ -12,7 +12,7 @@
 
   <ul>
       <li [(class.lt)]="item.done" *ngFor="let item of items">
-          <a href="item/{{item.id}}">{{item.name}}</a>
+          <a routerLink="item/{{item.id}}">{{item.name}}</a>
       </li>
   </ul>
 </section>

@@ -27,7 +27,6 @@ export class TsingleComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.itemService.items);
     this.item = this.itemService.getItem(this.id);
   }
 
